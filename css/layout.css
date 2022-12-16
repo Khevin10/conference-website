@@ -1,0 +1,25 @@
+.container {
+    background-color: var(--C0);
+}
+
+.header {
+    height: 7rem;
+    background-color: white;
+    border-bottom: 1px solid var(--C0);
+}
+.home-banner {
+    height: 50rem;
+    background-color: azure;
+}
+
+.nav-top {
+    background-color:blanchedalmond;
+}
+.conf-info {
+    background-color: azure;
+}
+.footer {
+    height: 10rem;
+    color: white;
+    background-color: var(--C1);
+}
