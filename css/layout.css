@@ -3,10 +3,13 @@
 }
 
 .header {
-    height: 7rem;
+    height: 10rem;
     background-color: white;
-    border-bottom: 1px solid var(--C0);
+    display: flex;
+    align-items: center;
 }
+
+
 .home-banner {
     height: 50rem;
     background-color: azure;
@@ -15,9 +18,11 @@
 .nav-top {
     background-color:blanchedalmond;
 }
+
 .conf-info {
     background-color: azure;
 }
+
 .footer {
     height: 10rem;
     color: white;

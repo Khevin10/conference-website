@@ -20,7 +20,8 @@ html {
 }
 
 body {
-    font-family: 'Optima', 'Century Gothic', sans-serif;
+    /* font-family: 'Optima', 'Century Gothic', sans-serif; */
+    font-family: 'Century Gothic', sans-serif;
     line-height: 1.5;
     min-height: 100vh;
 }
