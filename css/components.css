@@ -20,7 +20,7 @@
 
 .search__input {
     font-family: inherit;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: inherit;
     border: none;
     border-bottom: 1px solid var(--C6);
@@ -58,7 +58,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 12rem;
 }
 
@@ -75,14 +75,28 @@
 }
 
 .user-profile:hover .user-profile__thumbnail {
-    height: 6rem;
+    height: 5.5rem;
 }
 
 .user-profile:hover .user-profile__username {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: var(--C1);
 }
 
 .user-profile > * {
-    transition: all .8s;
+    transition: all .4s;
+}
+
+
+
+/**********************************/
+/*             NAV-TOP            */
+
+.nav__link {
+    color: var(--C7);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 5rem;
+    padding: 10px 0;
 }

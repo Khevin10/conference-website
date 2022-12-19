@@ -16,7 +16,12 @@
 }
 
 .nav-top {
-    background-color:blanchedalmond;
+    background-image: linear-gradient(whitesmoke, white);
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .conf-info {
