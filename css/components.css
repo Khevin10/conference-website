@@ -99,4 +99,24 @@
     font-weight: 600;
     margin-left: 5rem;
     padding: 10px 0;
+    display: inline-block;
+    position: relative;
+  }
+  
+.nav__link:hover {
+    color: var(--C6);
+}
+
+.nav__link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: var(--C1);
+    width: 0%;
+    bottom: 8px;
+}
+
+.nav__link:hover::before {
+    width: 100%;
 }
