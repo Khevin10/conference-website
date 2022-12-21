@@ -29,7 +29,7 @@
             
             
         </header>
-        <nav class="nav-top">
+        <nav class="nav-top" id="navtop">
             <a href="#" class="nav__link">Home</a>
             <a href="#" class="nav__link">About</a>
             <a href="#" class="nav__link">Call for papers</a>
@@ -41,6 +41,22 @@
         </div>
         <footer class="footer">Footer</footer>
     </div>
+    <script>
+        window.onscroll = function() {
+            sticknavbar();
+        };
+
+        var navbar = document.getElementById("navtop");
+        var sticky = navbar.offsetTop;
+
+        function sticknavbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
     <script src="https://kit.fontawesome.com/832a5f1165.js" crossorigin="anonymous"></script>
 </body>
 </html>

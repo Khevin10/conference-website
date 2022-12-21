@@ -16,6 +16,7 @@
 }
 
 .nav-top {
+    overflow: hidden;
     background-image: linear-gradient(whitesmoke, white);
     border-bottom: 1px solid whitesmoke;
     display: flex;
