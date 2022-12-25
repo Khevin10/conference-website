@@ -1,7 +1,7 @@
 /**************************/
-/*          LOGO          */
+/*      HEADER LOGO       */
 
-.logo {
+.header__logo {
     height: 7rem;
     margin-left: 3rem;
     margin-right: auto;
@@ -129,4 +129,51 @@
 
 .sticky + .content {
     padding-top: 48px;
+}
+
+
+
+/**********************************/
+/*             BANNER             */
+
+.banner__logo {
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.banner__title {
+    font-size: 2.5rem;
+    width: 60%;
+    margin-left: 4rem;
+}
+
+.banner__info {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-right: 4rem;
+}
+
+.banner__title, .banner__info {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.banner__venue, .banner__date {
+    text-align: right;
+}
+
+.banner__venue {
+    margin-top: auto;
+}
+
+.banner__icon {
+    margin-right: 1rem;
+}
+
+.banner__subtitle {
+    font-size: 2rem;
+    margin-top: 2rem;
 }

@@ -11,8 +11,14 @@
 
 
 .home-banner {
-    height: 50rem;
-    background-color: azure;
+    background-image: url("../img/technology.png");
+    background-color: var(--C2);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
 }
 
 .nav-top {
