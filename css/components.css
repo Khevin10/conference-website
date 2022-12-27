@@ -166,7 +166,7 @@
 }
 
 .banner__venue {
-    margin-top: auto;
+    margin-bottom: 1rem;
 }
 
 .banner__icon {
@@ -176,4 +176,55 @@
 .banner__subtitle {
     font-size: 2rem;
     margin-top: 2rem;
+}
+
+
+
+/**********************************/
+/*             FOOTER             */
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footer__logo {
+    height: 6rem;
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+
+.footer__social {
+    margin-right: 10rem;
+    font-size: 1.6rem;
+}
+
+.footer__socialicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 4rem;
+}
+
+.footer__icon {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.footer__icon:hover {
+    font-size: 4rem;
+}
+
+#connect {
+    text-align: center;
 }
