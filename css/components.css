@@ -316,3 +316,45 @@
 .speaker-box:hover > .speaker__picture {
     border: 4px solid var(--C1);
 }
+
+.content-box__link {
+    text-decoration: none;
+}
+
+.content-box__link:hover {
+    text-decoration: underline;
+}
+
+
+
+/**************************************************/
+/*             PUBLICATION AND JOURNAL            */
+
+.publication {
+    display: flex;
+}
+
+.publication__image {
+    height: 20rem;
+    margin-left: 2rem;
+    transition: 200ms;
+}
+
+.publication__image:hover {
+    box-shadow: 0px 5px 30px #999;
+}
+
+.journals-list__list{
+    list-style: none;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.journals-list__item {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.journals-image {
+    display: flex;
+}
