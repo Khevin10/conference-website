@@ -155,7 +155,34 @@
                         </div>
                     </div>
                     <div class="content-aside">
-aszie
+                        <div class="aside-box">
+                            <div class="aside-heading">
+                                <h3>Latest News</h3>
+                            </div>
+                            <ul class="latest-news__list">
+                                <li class="latest-news__item">
+                                    <p class="aside-box__text aside-box__text--main-text"><i class="fa-solid fa-angle-right aside-box__icon"></i>The list of accepted papers published.</p>
+                                    <p class="aside-box__text aside-box__text--details">Click <a href="" class="aside-box__link">here</a> for details.</p>
+                                </li>
+                                <li class="latest-news__item">
+                                    <p class="aside-box__text aside-box__text--main-text"><i class="fa-solid fa-angle-right aside-box__icon"></i>Submission of papers for ICACIE 2022 is open.</p>
+                                    <p class="aside-box__text aside-box__text--details">Click <a href="" class="aside-box__link">here</a> to submit your paper.</p>
+                                </li>
+                                <li class="latest-news__item">
+                                    <p class="aside-box__text aside-box__text--main-text"><i class="fa-solid fa-angle-right aside-box__icon"></i>The deadline for paper submission is extended to 30th September 2022 [Hard Deadline].</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aside-box">
+                            <div class="aside-heading">
+                                <h3>Paper Submission Deadline</h3>
+                            </div>
+                            <p class="aside-box__text aside-box__text--countdown-text">Submission of papers for ICACIE 2023 will be closed in</p>
+                            <p class="aside-box__text aside-box__text--countdown" id="countdown"></p>
+                            <div class="aside-box__button-container">
+                                <button class="button aside-box__button">Submit</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -184,8 +211,8 @@ aszie
             sticknavbar();
         };
 
-        var navbar = document.getElementById("navtop");
-        var sticky = navbar.offsetTop;
+        let navbar = document.getElementById("navtop");
+        let sticky = navbar.offsetTop;
 
         function sticknavbar() {
             if (window.pageYOffset >= sticky) {
@@ -194,6 +221,35 @@ aszie
                 navbar.classList.remove("sticky");
             }
         }
+
+        // Set the date we're counting down to
+        let countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        let x = setInterval(function() {
+
+            // Get today's date and time
+            let now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            let distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
     </script>
     <script src="https://kit.fontawesome.com/832a5f1165.js" crossorigin="anonymous"></script>
 </body>

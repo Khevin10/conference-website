@@ -48,3 +48,19 @@
     display: flex;
     flex-direction: column;
 }
+
+
+.home-content {
+    display: flex;
+}
+
+.content-aside {
+    background-color: whitesmoke;
+    width: 25%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.content-main {
+    flex: 1;
+}
