@@ -350,9 +350,6 @@
 /********************************/
 /*             ASIDE            */
 
-.content-aside {
-    padding: 1.5rem 1.5rem;
-}
 
 .aside-box {
     padding: 2rem 1.5rem 1rem;
@@ -447,4 +444,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.aside-box__heading {
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: var(--C1);
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.aside-box__important-item {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.aside-box__important-date {
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }

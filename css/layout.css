@@ -59,6 +59,9 @@
     width: 25%;
     margin-left: 2rem;
     margin-bottom: 2rem;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-main {
