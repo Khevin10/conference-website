@@ -492,3 +492,24 @@
 .sponsor-item:not(:last-child) {
     margin-bottom: 5rem;
 }
+
+.banner-title--page {
+    font-size: 2rem;
+    flex: 0 0 60%;
+}
+
+.speaker-page__title {
+    color: var(--C1);
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.speaker-page-heading:not(:first-child) {
+    margin-top: 8rem;
+}
+
+.speaker-page-heading {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}

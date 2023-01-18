@@ -30,9 +30,10 @@
             
         </header>
         <nav class="nav-top" id="navtop">
-            <a href="#" class="nav__link">Home</a>
+            <a href="index.html" class="nav__link">Home</a>
             <a href="#" class="nav__link">About</a>
             <a href="#" class="nav__link">Call for papers</a>
+            <a href="speakers.html" class="nav__link">Keynotes/Speakers</a>
         </nav>
         <div class="content">
             <main class="conf-info">
@@ -261,7 +262,7 @@
         }
 
         // Set the date we're counting down to
-        let countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+        let countDownDate = new Date("Aug 5, 2023 23:59:59").getTime();
 
         // Update the count down every 1 second
         let x = setInterval(function() {
@@ -279,7 +280,7 @@
             let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById("countdown").innerHTML = days + "days " + hours + "h "
+            document.getElementById("countdown").innerHTML = days + " days " + hours + "h "
             + minutes + "m " + seconds + "s ";
 
             // If the count down is finished, write some text
