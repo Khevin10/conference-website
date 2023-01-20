@@ -493,6 +493,12 @@
     margin-bottom: 5rem;
 }
 
+
+
+/***********************************/
+/*             SPEAKERS            */
+
+
 .banner-title--page {
     font-size: 2rem;
     flex: 0 0 60%;
@@ -512,4 +518,67 @@
     background-color: white;
     margin-bottom: 2rem;
     padding: 1rem;
+}
+
+.panel-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panelist__photo {
+    height: 20rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.panel-item:nth-child(even) {
+    text-align: right;
+}
+
+.panel-item:nth-child(even) > .panel-detail {
+    margin-right: 5rem;
+}
+
+.panel-item:nth-child(odd) {
+    text-align: left;
+}
+
+.panel-item:nth-child(odd) > .panel-detail {
+    margin-left: 5rem;
+}
+
+.panelist__name {
+    font-size: 2.5rem;
+    color: var(--C1);
+}
+
+.panelist__text {
+    font-size: 1.4rem;
+}
+
+.panel-item:not(:last-child){
+    margin-bottom: 5rem;
+}
+
+.panel-item:first-child{
+    margin-top: 3rem;
+}
+
+.heading__subtitle {
+    color: var(--C1);
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+
+.heading__subtext {
+    font-size: 1.6rem;
+    margin-left: 4rem;
 }
