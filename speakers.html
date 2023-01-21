@@ -47,16 +47,48 @@
                         <div class="speaker-page-heading">
                             <h2 class="speaker-page__title">Plenary Keynote Speaker</h2>
                         </div>
+                        <div class="speaker-item">
+                            <img src="img/profile-icon.jpg" alt="Panel member photo" class="speaker__photo">
+                            <div class="speaker-detail">
+                                <h1 class="speaker__name">Prasanta Panda</h1>
+                                <p class="speaker__text">Senior Data Scientist,</p>
+                                <p class="speaker__text">TCS Research and Innovation Labs, India</p>
+                                <h2 class="speaker__talk-title-heading">Title of the talk</h2>
+                                <p class="speaker__talk-title">Building Hyper-Connected Networks – the Future of Digital Transformation</p>
+                            </div>
+                        </div>
+
+                        <button class="collapsible-button">Open Section 2</button>
+                        <div class="collapsible-content">
+                            <p class="collapsible-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
                         <div class="speaker-page-heading">
                             <h2 class="speaker-page__title">Keynote and Invited Speakers</h2>
                         </div>
+                        <div class="speaker-item">
+                            <img src="img/profile-icon.jpg" alt="Panel member photo" class="speaker__photo">
+                            <div class="speaker-detail">
+                                <h1 class="speaker__name">Prasanta Panda</h1>
+                                <p class="speaker__text">Senior Data Scientist,</p>
+                                <p class="speaker__text">TCS Research and Innovation Labs, India</p>
+                                <h2 class="speaker__talk-title-heading">Title of the talk</h2>
+                                <p class="speaker__talk-title">Building Hyper-Connected Networks – the Future of Digital Transformation</p>
+                            </div>
+                        </div>
+
+                        <button class="collapsible-button">Open Section 1</button>
+                        <div class="collapsible-content">
+                            <p class="collapsible-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
                         <div class="speaker-page-heading">
                             <h2 class="speaker-page__title">Keynote and Invited Speakers in Women in Engineering [WiE]</h2>
                         </div>
                         <div class="speaker-page-heading">
                             <h2 class="speaker-page__title">Panelists in Industry Panel Discussion</h2>
                             <h4 class="heading__subtitle">Topic</h4>
-                            <p class="heading__subtext">Pandemic – Turning Challenges into Opportunities</p>
+                            <p class="heading__subtext">Pandemic - Turning Challenges into Opportunities</p>
                         </div>
                         <div class="panel-list">
                             <div class="panel-item">
@@ -121,6 +153,21 @@
             } else {
                 navbar.classList.remove("sticky");
             }
+        }
+
+        let coll = document.getElementsByClassName("collapsible-button");
+        let i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
         }
     </script>
     <script src="https://kit.fontawesome.com/832a5f1165.js" crossorigin="anonymous"></script>

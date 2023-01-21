@@ -515,7 +515,7 @@
 }
 
 .speaker-page-heading {
-    background-color: white;
+    background-color: #F0F0F0;
     margin-bottom: 2rem;
     padding: 1rem;
 }
@@ -561,7 +561,7 @@
 }
 
 .panelist__text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .panel-item:not(:last-child){
@@ -582,3 +582,77 @@
     font-size: 1.6rem;
     margin-left: 4rem;
 }
+
+.speaker-item {
+    background-color: #F0F0F0;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speaker__name {
+    font-size: 2.5rem;
+    color: var(--C1);
+    margin-bottom: 1rem;
+}
+
+.speaker__text {
+    font-size: 1.8rem;
+}
+
+.speaker__photo {
+    height: 20rem;
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.speaker__talk-title-heading {
+    font-size: 2rem;
+    color: var(--C1);
+    margin-top: 2rem;
+    margin-bottom: 1rem;   
+}
+
+.speaker__talk-title {
+    font-size: 1.6rem;
+}
+
+
+
+
+.collapsible-button {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible-button:hover {
+    background-color: #555;
+  }
+  
+  .collapsible-button:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
