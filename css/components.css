@@ -670,3 +670,30 @@
     text-align: justify;
     line-height: 2.5rem;
   }
+
+
+
+/*******************************************/
+/*             COMING SOON PAGE            */
+
+.coming-soon-content__title {
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+.coming-soon-content__text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.coming-soon-content__button {
+    margin-top: 2rem;
+    background-color: transparent;
+    color: black;
+    border: 3px solid #555555;
+  }
+  
+  .coming-soon-content__button:hover {
+    background-color: #555555;
+    color: white;
+}
