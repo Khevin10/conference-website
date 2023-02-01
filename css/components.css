@@ -709,6 +709,7 @@
 }
 
 .venue-page__title{
+    margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
     font-size: 4.5rem;
@@ -735,6 +736,10 @@
     text-align: justify;
 }
 
+.venue-box-content__text:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
 .venue-box-content__button {
     background-color: white; 
     color: var(--C2); 
@@ -746,4 +751,20 @@
 .venue-box-content__button:hover {
     background-color: var(--C2);
     color: white;
+}
+
+.venue-box:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.venue-banner--ravenala {
+    background-image: url("../img/ravenala-attitude.jpg");
+}
+
+.venue-banner--udm {
+    background-image: url("../img/banner-udm.jpg");
+}
+
+.venue-banner--mauritius {
+    background-image: url("../img/mauritius.jpg");
 }
