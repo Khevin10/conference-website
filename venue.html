@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue - ICACIE 2023</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/mainLogo.png" alt="UDM Logo" class="header__logo">
+            <form action="#" class="search">
+                <input type="text" placeholder="Search..." class="search__input">
+                <button class="search__button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="user-profile">
+                <img src="img/profile-icon.jpg" alt="Profile Thumbnail" class="user-profile__thumbnail">
+                <span class="user-profile__username">Khevin</span>
+            </div>
+        </header>
+        <nav class="nav-top" id="navtop">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="coming-soon.html" class="nav__link">About</a>
+            <a href="coming-soon.html" class="nav__link">Call for papers</a>
+            <a href="coming-soon.html" class="nav__link">Registration</a>
+            <a href="speakers.html" class="nav__link">Keynotes/Speakers</a>
+            <a href="coming-soon.html" class="nav__link">Commitee</a>
+            <a href="coming-soon.html" class="nav__link">Gallery</a>
+            <a href="venue.html" class="nav__link">Venue</a>
+            <a href="coming-soon.html" class="nav__link">Contact</a>
+        </nav>
+        <div class="content">
+            <main class="conf-info">
+                <div class="page-banner">
+                    <div class="banner-title--page">
+                        <h1>7<sup>th</sup> International Conference on Advanced Computing and Intelligent Engineering</h1>
+                    </div>
+                </div>
+                <nav class="nav-top">
+                    <a href="index.html" class="nav__link"><i class="fa-solid fa-plane-departure"></i> Travel</a>
+                    <a href="coming-soon.html" class="nav__link"><i class="fa-solid fa-bed"></i> Accommodation</a>
+                    <a href="coming-soon.html" class="nav__link"><i class="fa-solid fa-route"></i> Sightseeing</a>
+                </nav>
+                <div class="home-content">
+                    <div class="content-main">
+                        <h1 class="venue-page__title">Conference Venue</h1>
+                        <div class="venue-box">
+                            <div class="venue-banner"></div>
+                            <div class="venue-box-content">
+                                <h2 class="venue-box-content__title">The Ravenala Attitude Hotel</h2>
+                                <p class="venue-box-content__text">Secluded on north-west coast of Mauritius, in the small village of Balaclava, the Ravenala Attitude hotel is an ode to the art of tropical living. The name, 'Ravenala', is the first taste of tropical exploration, as it refers to the traveller's tree (or traveller's palm) - easily spotted thanks to its fabulous, fan-shaped collection of long leaves.</p>
+                                <a class="button venue-box-content__button" href="https://hotels-attitude.com/en/the-ravenala-attitude">Hotel Website</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="footer__content">
+                <img src="img/footerLogo.png" alt="UDM Logo" class="footer__logo">
+                <div class="footer__social">
+                    <p id="connect">connect with us</p>
+                    <div class="footer__socialicons">
+                        <i class="fa-brands fa-facebook footer__icon footer__icon--facebook"></i>
+                        <i class="fa-brands fa-instagram footer__icon footer__icon--instagram"></i>
+                        <i class="fa-brands fa-twitter footer__icon footer__icon--twitter"></i>
+                        <i class="fa-brands fa-linkedin footer__icon footer__icon--linkedin"></i>
+                        <i class="fa-brands fa-youtube footer__icon footer__icon--youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Copyright &copy; 2023 | All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        window.onscroll = function() {
+            sticknavbar();
+        };
+
+        let navbar = document.getElementById("navtop");
+        let sticky = navbar.offsetTop;
+
+        function sticknavbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        let coll = document.getElementsByClassName("collapsible-button");
+        let i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/832a5f1165.js" crossorigin="anonymous"></script>
+</body>
+</html>

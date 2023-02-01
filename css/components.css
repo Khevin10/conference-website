@@ -126,6 +126,7 @@
     top: 0;
     width: 100%;
     box-shadow: 0px 1px 10px #999;
+    z-index: 1;
 }
 
 .sticky + .content {
@@ -695,5 +696,54 @@
   
   .coming-soon-content__button:hover {
     background-color: #555555;
+    color: white;
+}
+
+
+/*******************************************/
+/*               VENUE PAGE                */
+
+.venue-box {
+    background-color: white;
+    padding: 3rem 3rem;
+}
+
+.venue-page__title{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: 4.5rem;
+    color: var(--C1);
+}
+
+.venue-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.venue-box-content {
+    flex: 1;
+}
+
+.venue-box-content__title {
+    font-size: 2.5rem;
+    color: var(--C1);
+    margin-bottom: 2rem;
+}
+
+.venue-box-content__text {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.venue-box-content__button {
+    background-color: white; 
+    color: var(--C2); 
+    border: 2px solid var(--C2);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.venue-box-content__button:hover {
+    background-color: var(--C2);
     color: white;
 }
