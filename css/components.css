@@ -768,3 +768,51 @@
 .venue-banner--mauritius {
     background-image: url("../img/mauritius.jpg");
 }
+
+
+
+/*******************************************/
+/*              TRAVEL PAGE                */
+
+.travel-page__title {
+    font-size: 3.5rem;
+    color: var(--C1);
+    margin-bottom: 1rem;
+}
+
+.travel-page__text {
+    font-size: 1.6rem;
+}
+
+.travel-page__item:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.travel-page__item {
+    margin-left: 1.5rem;
+}
+
+.travel-page__button {
+    background-color: white; 
+    color: var(--C2); 
+    border: 2px solid var(--C2);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.travel-page__button:hover {
+    background-color: var(--C2);
+    color: white;
+}
+
+.travel-page-heading-box {
+    padding: 1rem 2em;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.travel-page__heading {
+    margin-left: 1rem;
+    color: var(--C1);
+    font-size: 4.5rem;
+}
