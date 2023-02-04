@@ -816,3 +816,7 @@
     color: var(--C1);
     font-size: 4.5rem;
 }
+
+.travel-page__text:first-child {
+    margin-top: 2rem;
+}
